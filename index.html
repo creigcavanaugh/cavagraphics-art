@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Artist Gallery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS (via CDN) -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+
+  <!-- Your styles -->
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <!-- Top navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-semibold" href="#">Artist Name</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto small">
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery-root">Gallery</a>
+          </li>
+          <!-- Add more links here (About, Contact, etc.) -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero / Intro -->
+  <header class="hero-section py-5">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7">
+          <h1 class="display-5 fw-bold mb-3">Art of James P. Cavanaugh</h1>
+          <p class="lead text-muted">
+            A curated collection of oil paintings, cross hatching, pastels, silk screen,
+            pen &amp; ink, and more — spanning decades of creative work.
+          </p>
+          <p class="mb-4 text-muted">
+            Scroll down to explore each style. The atmosphere shifts as you move through
+            the gallery.
+          </p>
+          <a href="#gallery-root" class="btn btn-dark btn-lg">
+            View Gallery
+          </a>
+        </div>
+        <div class="col-lg-5 text-center">
+          <!-- Optional: add a featured image or artist portrait here -->
+          <div class="hero-image-placeholder"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Gallery root; sections are injected by JS -->
+  <main id="gallery-root" class="gallery-root"></main>
+
+  <!-- Footer -->
+  <footer class="py-4 border-top mt-5 small text-muted">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center">
+      <span>&copy; <span id="footer-year"></span> [Artist Name]</span>
+      <span>Site by [Your Name]</span>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (for navbar, etc.) -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- Your main script -->
+  <script src="/js/main.js"></script>
+</body>
+</html>

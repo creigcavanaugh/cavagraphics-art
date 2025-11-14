@@ -1,0 +1,882 @@
+[
+  {
+    "id": "FR-01",
+    "title": "Flower Bush",
+    "style": "colored-pencil",
+    "year": 2010,
+    "size": "4.5×6.5",
+    "medium": "Colored pencil",
+    "description": "",
+    "image": "/images/colored-pencil/fr-01.jpg"
+  },
+  {
+    "id": "FR-02",
+    "title": "Woman from the Back",
+    "style": "pen-ink",
+    "year": 1967,
+    "size": "8×6",
+    "medium": "Pen and ink",
+    "description": "",
+    "image": "/images/pen-ink/fr-02.jpg"
+  },
+  {
+    "id": "FR-03",
+    "title": "Village Waterfalls",
+    "style": "pen-ink",
+    "year": 1966,
+    "size": "6.5×8",
+    "medium": "Pen and ink",
+    "description": "",
+    "image": "/images/pen-ink/fr-03.jpg"
+  },
+  {
+    "id": "FR-04",
+    "title": "Mother Superior",
+    "style": "silk-screen",
+    "year": 1967,
+    "size": "22×15",
+    "medium": "Silkscreen",
+    "description": "",
+    "image": "/images/silk-screen/fr-04.jpg"
+  },
+  {
+    "id": "FR-05",
+    "title": "Fall Forest",
+    "style": "colored-pencil",
+    "year": 2008,
+    "size": "8×4.5",
+    "medium": "Colored pencil",
+    "description": "",
+    "image": "/images/colored-pencil/fr-05.jpg"
+  },
+  {
+    "id": "FR-06",
+    "title": "Window In Orange",
+    "style": "colored-pencil",
+    "year": 2005,
+    "size": "6×4",
+    "medium": "Colored pencil",
+    "description": "",
+    "image": "/images/colored-pencil/fr-06.jpg"
+  },
+  {
+    "id": "FR-07",
+    "title": "The Grist Mill",
+    "style": "pen-ink",
+    "year": 1967,
+    "size": "8×10",
+    "medium": "Pen and ink",
+    "description": "",
+    "image": "/images/pen-ink/fr-07.jpg"
+  },
+  {
+    "id": "FR-08",
+    "title": "Red Geranium",
+    "style": "pastels",
+    "year": 2006,
+    "size": "9×5.5",
+    "medium": "Pastels",
+    "description": "",
+    "image": "/images/pastels/fr-08.jpg"
+  },
+  {
+    "id": "FR-09",
+    "title": "Plant Profusion",
+    "style": "colored-pencil",
+    "year": 2006,
+    "size": "8.5×11",
+    "medium": "Colored pencil",
+    "description": "",
+    "image": "/images/colored-pencil/fr-09.jpg"
+  },
+  {
+    "id": "FR-10",
+    "title": "Floral Beauty",
+    "style": "colored-pencil",
+    "year": 2005,
+    "size": "8.5×6",
+    "medium": "Colored pencil",
+    "description": "",
+    "image": "/images/colored-pencil/fr-10.jpg"
+  },
+  {
+    "id": "FR-11",
+    "title": "The Bishop",
+    "style": "silk-screen",
+    "year": 1967,
+    "size": "22×15",
+    "medium": "Silkscreen",
+    "description": "",
+    "image": "/images/silk-screen/fr-11.jpg"
+  },
+  {
+    "id": "FR-12",
+    "title": "Ready At Mystic",
+    "style": "pen-ink",
+    "year": 1995,
+    "size": "10×14",
+    "medium": "Pen and ink",
+    "description": "",
+    "image": "/images/pen-ink/fr-12.jpg"
+  },
+  {
+    "id": "FR-13",
+    "title": "Jungle Greens",
+    "style": "colored-pencil",
+    "year": 1998,
+    "size": "9×6",
+    "medium": "Colored pencil",
+    "description": "",
+    "image": "/images/colored-pencil/fr-13.jpg"
+  },
+  {
+    "id": "FR-14",
+    "title": "Candlelight",
+    "style": "charcoal",
+    "year": 1966,
+    "size": "8×12",
+    "medium": "Charcoal",
+    "description": "",
+    "image": "/images/charcoal/fr-14.jpg"
+  },
+  {
+    "id": "FR-15",
+    "title": "Cape Cod Dunes",
+    "style": "colored-pencil",
+    "year": 2006,
+    "size": "6×4",
+    "medium": "Colored pencil",
+    "description": "",
+    "image": "/images/colored-pencil/fr-15.jpg"
+  },
+  {
+    "id": "FR-16",
+    "title": "Old Newgate Prison",
+    "style": "colored-pencil",
+    "year": 2007,
+    "size": "9×7",
+    "medium": "Colored pencil",
+    "description": "",
+    "image": "/images/colored-pencil/fr-16.jpg"
+  },
+  {
+    "id": "FR-18",
+    "title": "Spring",
+    "style": "woodcut",
+    "year": 1968,
+    "size": "12×16",
+    "medium": "Woodcut",
+    "description": "",
+    "image": "/images/woodcut/fr-18.jpg"
+  },
+  {
+    "id": "FR-19",
+    "title": "Sun Over Athens",
+    "style": "woodcut",
+    "year": 1977,
+    "size": "12×16",
+    "medium": "Woodcut",
+    "description": "",
+    "image": "/images/woodcut/fr-19.jpg"
+  },
+  {
+    "id": "FR-21",
+    "title": "Fence And Flowers",
+    "style": "colored-pencil",
+    "year": 2023,
+    "size": "4×3",
+    "medium": "Colored pencil",
+    "description": "",
+    "image": "/images/colored-pencil/fr-21.jpg"
+  },
+  {
+    "id": "FR-22",
+    "title": "Park Spot",
+    "style": "woodcut",
+    "year": 1998,
+    "size": "4×3",
+    "medium": "Woodcut",
+    "description": "",
+    "image": "/images/woodcut/fr-22.jpg"
+  },
+  {
+    "id": "FR-23",
+    "title": "Bermuda Garden",
+    "style": "colored-pencil",
+    "year": 1998,
+    "size": "11.5×6",
+    "medium": "Colored pencil",
+    "description": "",
+    "image": "/images/colored-pencil/fr-23.jpg"
+  },
+  {
+    "id": "FR-24",
+    "title": "Big Poppy",
+    "style": "oil",
+    "year": 2006,
+    "size": "22×16",
+    "medium": "Oil on canvas",
+    "description": "",
+    "image": "/images/oil/fr-24.jpg"
+  },
+  {
+    "id": "FR-25",
+    "title": "Floral In Green And Gray",
+    "style": "colored-pencil",
+    "year": 2002,
+    "size": "11×19",
+    "medium": "Colored pencil",
+    "description": "",
+    "image": "/images/colored-pencil/fr-25.jpg"
+  },
+  {
+    "id": "FR-26",
+    "title": "The Bridge",
+    "style": "pastels",
+    "year": 1967,
+    "size": "12×13",
+    "medium": "Chalk pastel",
+    "description": "",
+    "image": "/images/pastels/fr-26.jpg"
+  },
+  {
+    "id": "FR-27",
+    "title": "Self-Portrait, James Cavanaugh",
+    "style": "woodcut",
+    "year": 1967,
+    "size": "9×12",
+    "medium": "Woodcut",
+    "description": "",
+    "image": "/images/woodcut/fr-27.jpg"
+  },
+  {
+    "id": "FR-28",
+    "title": "Four Blooms",
+    "style": "colored-pencil",
+    "year": 2021,
+    "size": "4×6",
+    "medium": "Colored pencil",
+    "description": "",
+    "image": "/images/colored-pencil/fr-28.jpg"
+  },
+  {
+    "id": "FR-29",
+    "title": "Bench and Red Flowers",
+    "style": "colored-pencil",
+    "year": 2003,
+    "size": "5×6",
+    "medium": "Colored pencil",
+    "description": "",
+    "image": "/images/colored-pencil/fr-29.jpg"
+  },
+  {
+    "id": "FR-30",
+    "title": "Batterson Dock",
+    "style": "colored-pencil",
+    "year": 2004,
+    "size": "9×11",
+    "medium": "Colored pencil",
+    "description": "",
+    "image": "/images/colored-pencil/fr-30.jpg"
+  },
+  {
+    "id": "FR-31",
+    "title": "Newport Rose",
+    "style": "colored-pencil",
+    "year": 2003,
+    "size": "5×6",
+    "medium": "Colored pencil",
+    "description": "",
+    "image": "/images/colored-pencil/fr-31.jpg"
+  },
+  {
+    "id": "FR-32",
+    "title": "Mystic Yard",
+    "style": "pastels",
+    "year": 2003,
+    "size": "9×11",
+    "medium": "Pastels",
+    "description": "",
+    "image": "/images/pastels/fr-32.jpg"
+  },
+  {
+    "id": "FR-33",
+    "title": "Field of Daffodils",
+    "style": "silk-screen",
+    "year": 1976,
+    "size": "22×28",
+    "medium": "Silkscreen",
+    "description": "",
+    "image": "/images/silk-screen/fr-33.jpg"
+  },
+  {
+    "id": "FR-34",
+    "title": "Farmhouse Kitchen Night View",
+    "style": "etching",
+    "year": 1967,
+    "size": "3×10",
+    "medium": "Etching",
+    "description": "",
+    "image": "/images/etching/fr-34.jpg"
+  },
+  {
+    "id": "FR-35",
+    "title": "Red Homestead",
+    "style": "colored-pencil",
+    "year": 2016,
+    "size": "6×9",
+    "medium": "Colored pencil",
+    "description": "",
+    "image": "/images/colored-pencil/fr-35.jpg"
+  },
+  {
+    "id": "FR-37",
+    "title": "Daffodils In Vases",
+    "style": "colored-pencil",
+    "year": 2010,
+    "size": "7×9",
+    "medium": "Colored pencil",
+    "description": "",
+    "image": "/images/colored-pencil/fr-37.jpg"
+  },
+  {
+    "id": "FR-38",
+    "title": "Yellow Flower",
+    "style": "oil",
+    "year": 2012,
+    "size": "9×12",
+    "medium": "Oil painting on canvas",
+    "description": "",
+    "image": "/images/oil/fr-38.jpg"
+  },
+  {
+    "id": "LR-39",
+    "title": "The Modern One (artist self-portrait)",
+    "style": "lithograph",
+    "year": 1968,
+    "size": "7×9",
+    "medium": "Lithograph",
+    "description": "",
+    "image": "/images/lithograph/lr-39.jpg"
+  },
+  {
+    "id": "LR-40",
+    "title": "Park Terrace Hartford Homestead",
+    "style": "woodcut",
+    "year": 1983,
+    "size": "2×5",
+    "medium": "Woodcut",
+    "description": "",
+    "image": "/images/woodcut/lr-40.jpg"
+  },
+  {
+    "id": "LR-41",
+    "title": "Bright Garden",
+    "style": "colored-pencil",
+    "year": 1968,
+    "size": "12×15",
+    "medium": "Colored pencil",
+    "description": "",
+    "image": "/images/colored-pencil/lr-41.jpg"
+  },
+  {
+    "id": "LR-42",
+    "title": "Table Still Life",
+    "style": "oil",
+    "year": 1964,
+    "size": "20×24",
+    "medium": "Oil painting",
+    "description": "",
+    "image": "/images/oil/lr-42.jpg"
+  },
+  {
+    "id": "LR-43",
+    "title": "Winter Coat",
+    "style": "silk-screen",
+    "year": 1967,
+    "size": "20×24",
+    "medium": "Silkscreen",
+    "description": "",
+    "image": "/images/silk-screen/lr-43.jpg"
+  },
+  {
+    "id": "BB-44",
+    "title": "Fruit Basket And Wine (Still Life)",
+    "style": "watercolor",
+    "year": 1964,
+    "size": "10.5×13.5",
+    "medium": "Watercolor",
+    "description": "",
+    "image": "/images/watercolor/bb-44.jpg"
+  },
+  {
+    "id": "LR-45",
+    "title": "Male Face In Diamond",
+    "style": "etching",
+    "year": 1965,
+    "size": "4×4",
+    "medium": "Etching",
+    "description": "",
+    "image": "/images/etching/lr-45.jpg"
+  },
+  {
+    "id": "LR-46",
+    "title": "Bright Garden",
+    "style": "silk-screen",
+    "year": 1966,
+    "size": "8×10",
+    "medium": "Silkscreen",
+    "description": "",
+    "image": "/images/silk-screen/lr-46.jpg"
+  },
+  {
+    "id": "FH-48",
+    "title": "Looking Out The Kitchen Window",
+    "style": "silk-screen",
+    "year": 1972,
+    "size": "7×7×7",
+    "medium": "Acrylic cube silkscreen",
+    "description": "",
+    "image": "/images/silk-screen/fh-48.jpg"
+  },
+  {
+    "id": "FH-49",
+    "title": "Parent’s Den 1960’s (artist proof)",
+    "style": "etching",
+    "year": 1967,
+    "size": "7×10",
+    "medium": "Etching",
+    "description": "",
+    "image": "/images/etching/fh-49.jpg"
+  },
+  {
+    "id": "FH-50",
+    "title": "Field of Daffodils (artist study)",
+    "style": "silk-screen",
+    "year": 1972,
+    "size": "5×6",
+    "medium": "Silkscreen",
+    "description": "",
+    "image": "/images/silk-screen/fh-50.jpg"
+  },
+  {
+    "id": "FH-51",
+    "title": "Pitcher And Chairs",
+    "style": "pencil",
+    "year": 1968,
+    "size": "9×12",
+    "medium": "Pencil",
+    "description": "",
+    "image": "/images/pencil/fh-51.jpg"
+  },
+  {
+    "id": "FH-52",
+    "title": "Mystic Village Waterway",
+    "style": "colored-pencil",
+    "year": 1999,
+    "size": "5×7",
+    "medium": "Colored pencil",
+    "description": "",
+    "image": "/images/colored-pencil/fh-52.jpg"
+  },
+  {
+    "id": "FH-53",
+    "title": "Cape Cod Beach",
+    "style": "colored-pencil",
+    "year": 2012,
+    "size": "4×6",
+    "medium": "Colored pencil",
+    "description": "",
+    "image": "/images/colored-pencil/fh-53.jpg"
+  },
+  {
+    "id": "FH-54",
+    "title": "Chair And Lamp Study",
+    "style": "etching",
+    "year": 1968,
+    "size": "9×12",
+    "medium": "Etching",
+    "description": "",
+    "image": "/images/etching/fh-54.jpg"
+  },
+  {
+    "id": "DC-55",
+    "title": "Tulips",
+    "style": "colored-pencil",
+    "year": 2017,
+    "size": "8×10",
+    "medium": "Colored pencil",
+    "description": "",
+    "image": "/images/colored-pencil/dc-55.jpg"
+  },
+  {
+    "id": "FH-56",
+    "title": "Celebrate",
+    "style": "oil",
+    "year": 2018,
+    "size": "9×12",
+    "medium": "Oil painting",
+    "description": "",
+    "image": "/images/oil/fh-56.jpg"
+  },
+  {
+    "id": "FH-57",
+    "title": "The Studio",
+    "style": "pen-ink",
+    "year": 1998,
+    "size": "7.5×9.5",
+    "medium": "Pen and ink",
+    "description": "",
+    "image": "/images/pen-ink/fh-57.jpg"
+  },
+  {
+    "id": "FH-58",
+    "title": "Terrace View",
+    "style": "pen-ink",
+    "year": 1998,
+    "size": "12×18",
+    "medium": "Pen and ink",
+    "description": "",
+    "image": "/images/pen-ink/fh-58.jpg"
+  },
+  {
+    "id": "FH-59",
+    "title": "Southern Comfort-Vizcaya",
+    "style": "pen-ink",
+    "year": 1990,
+    "size": "8×10",
+    "medium": "Pen and ink",
+    "description": "",
+    "image": "/images/pen-ink/fh-59.jpg"
+  },
+  {
+    "id": "FH-60",
+    "title": "Old Woman",
+    "style": "cross-hatching",
+    "year": 1968,
+    "size": "5×7",
+    "medium": "Crosshatching",
+    "description": "",
+    "image": "/images/cross-hatching/fh-60.jpg"
+  },
+  {
+    "id": "FH-62",
+    "title": "Six Piece Abstract",
+    "style": "silk-screen",
+    "year": 1967,
+    "size": "10×12",
+    "medium": "Silkscreen",
+    "description": "",
+    "image": "/images/silk-screen/fh-62.jpg"
+  },
+  {
+    "id": "FH-63",
+    "title": "Garden View",
+    "style": "colored-pencil",
+    "year": 2013,
+    "size": "10×13",
+    "medium": "Colored pencil",
+    "description": "",
+    "image": "/images/colored-pencil/fh-63.jpg"
+  },
+  {
+    "id": "HB-64",
+    "title": "Death Of A Kite",
+    "style": "lithograph",
+    "year": 1967,
+    "size": "9×12",
+    "medium": "Lithograph",
+    "description": "",
+    "image": "/images/lithograph/hb-64.jpg"
+  },
+  {
+    "id": "HB-65",
+    "title": "Random Patterns",
+    "style": "mezzotint",
+    "year": 1967,
+    "size": "10.5×13.5",
+    "medium": "Mezzotint print",
+    "description": "",
+    "image": "/images/mezzotint/hb-65.jpg"
+  },
+  {
+    "id": "HB-66",
+    "title": "Connecticut Landscape",
+    "style": "pen-ink",
+    "year": 2007,
+    "size": "7.5×9.5",
+    "medium": "Pen and ink",
+    "description": "",
+    "image": "/images/pen-ink/hb-66.jpg"
+  },
+  {
+    "id": "DR-67",
+    "title": "Mod Madonna (Linda & Creig)",
+    "style": "pencil",
+    "year": 1977,
+    "size": "8×10",
+    "medium": "Pencil",
+    "description": "",
+    "image": "/images/pencil/dr-67.jpg"
+  },
+  {
+    "id": "DR-68",
+    "title": "Fruit Basket in Oval",
+    "style": "colored-pencil",
+    "year": 2003,
+    "size": "7×9",
+    "medium": "Colored pencil",
+    "description": "",
+    "image": "/images/colored-pencil/dr-68.jpg"
+  },
+  {
+    "id": "DR-69",
+    "title": "Caribbean Bay",
+    "style": "colored-pencil",
+    "year": 1996,
+    "size": "8×11",
+    "medium": "Colored pencil",
+    "description": "",
+    "image": "/images/colored-pencil/dr-69.jpg"
+  },
+  {
+    "id": "DR-70",
+    "title": "Red Farm",
+    "style": "colored-pencil",
+    "year": 2005,
+    "size": "7×9",
+    "medium": "Colored pencil",
+    "description": "",
+    "image": "/images/colored-pencil/dr-70.jpg"
+  },
+  {
+    "id": "BH-71",
+    "title": "Spanish Guitarist",
+    "style": "oil",
+    "year": 1965,
+    "size": "24×36",
+    "medium": "Oil painting",
+    "description": "",
+    "image": "/images/oil/bh-71.jpg"
+  },
+  {
+    "id": "BH-72",
+    "title": "HAS Student Print Show Poster",
+    "style": "silk-screen",
+    "year": 1967,
+    "size": "16×20",
+    "medium": "Silkscreen",
+    "description": "",
+    "image": "/images/silk-screen/bh-72.jpg"
+  },
+  {
+    "id": "FB-73",
+    "title": "Things Go Better With God Poster",
+    "style": "silk-screen",
+    "year": 1967,
+    "size": "17×22",
+    "medium": "Silkscreen",
+    "description": "",
+    "image": "/images/silk-screen/fb-73.jpg"
+  },
+  {
+    "id": "OF-115",
+    "title": "R.Frost Poetry Collection Book",
+    "style": "woodcut",
+    "year": 1964,
+    "size": "4.25×5",
+    "medium": "Bookplate art woodcut",
+    "description": "",
+    "image": "/images/woodcut/of-115.jpg"
+  },
+  {
+    "id": "OF-113",
+    "title": "Clay Abstract",
+    "style": "sculpture",
+    "year": 2012,
+    "size": "12×14×2",
+    "medium": "Fired clay shadowbox",
+    "description": "",
+    "image": "/images/sculpture/of-113.jpg"
+  },
+  {
+    "id": "OF-104",
+    "title": "Floral Study In Green and Pink",
+    "style": "colored-pencil",
+    "year": 2022,
+    "size": "8×8.5",
+    "medium": "Colored pencil",
+    "description": "",
+    "image": "/images/colored-pencil/of-104.jpg"
+  },
+  {
+    "id": "OF-105",
+    "title": "Crow’s Feet",
+    "style": "woodcut",
+    "year": 1966,
+    "size": "6.25×10.25",
+    "medium": "Woodcut",
+    "description": "",
+    "image": "/images/woodcut/of-105.jpg"
+  },
+  {
+    "id": "OF-103",
+    "title": "Moonlight Pond",
+    "style": "woodcut",
+    "year": 2010,
+    "size": "4.5×6.5",
+    "medium": "Woodcut",
+    "description": "",
+    "image": "/images/woodcut/of-103.jpg"
+  },
+  {
+    "id": "FB-81",
+    "title": "At Home In Paradise",
+    "style": "colored-pencil",
+    "year": 1993,
+    "size": "8×9",
+    "medium": "Colored pencil",
+    "description": "",
+    "image": "/images/colored-pencil/fb-81.jpg"
+  },
+  {
+    "id": "PA-82",
+    "title": "Standout",
+    "style": "colored-pencil",
+    "year": 2007,
+    "size": "8×10",
+    "medium": "Colored pencil",
+    "description": "",
+    "image": "/images/colored-pencil/pa-82.jpg"
+  },
+  {
+    "id": "BB-83",
+    "title": "Fruit And Painting",
+    "style": "oil",
+    "year": 1964,
+    "size": "24×30",
+    "medium": "Oil painting",
+    "description": "",
+    "image": "/images/oil/bb-83.jpg"
+  },
+  {
+    "id": "BA-94",
+    "title": "Shy Bear",
+    "style": "cross-hatching",
+    "year": 1966,
+    "size": "5.5×7.5",
+    "medium": "Crosshatching",
+    "description": "",
+    "image": "/images/cross-hatching/ba-94.jpg"
+  },
+  {
+    "id": "MB-107",
+    "title": "Sitting Nude",
+    "style": "oil",
+    "year": 1966,
+    "size": "38×35",
+    "medium": "Oil painting",
+    "description": "",
+    "image": "/images/oil/mb-107.jpg"
+  },
+  {
+    "id": "MB-108",
+    "title": "Female Nude",
+    "style": "pen-ink",
+    "year": 1966,
+    "size": "8×11",
+    "medium": "Pen and ink",
+    "description": "",
+    "image": "/images/pen-ink/mb-108.jpg"
+  },
+  {
+    "id": "MB-109",
+    "title": "Study In Black",
+    "style": "pen-ink",
+    "year": 1966,
+    "size": "5×5",
+    "medium": "Pen and ink",
+    "description": "",
+    "image": "/images/pen-ink/mb-109.jpg"
+  },
+  {
+    "id": "MB-110",
+    "title": "Abstract Snakes",
+    "style": "pen-ink",
+    "year": 1967,
+    "size": "5×7",
+    "medium": "Pen and ink",
+    "description": "",
+    "image": "/images/pen-ink/mb-110.jpg"
+  },
+  {
+    "id": "CB-89",
+    "title": "Summer Wall",
+    "style": "pen-ink",
+    "year": 2004,
+    "size": "8×9",
+    "medium": "Pen and ink",
+    "description": "",
+    "image": "/images/pen-ink/cb-89.jpg"
+  },
+  {
+    "id": "CB-90",
+    "title": "Kitchen Still Life",
+    "style": "etching",
+    "year": 1966,
+    "size": "10×11",
+    "medium": "Etching",
+    "description": "",
+    "image": "/images/etching/cb-90.jpg"
+  },
+  {
+    "id": "CB-91",
+    "title": "The Cave",
+    "style": "pencil",
+    "year": 1977,
+    "size": "7×9",
+    "medium": "Pencil",
+    "description": "",
+    "image": "/images/pencil/cb-91.jpg"
+  },
+  {
+    "id": "CB-92",
+    "title": "Flower Bush",
+    "style": "colored-pencil",
+    "year": 2009,
+    "size": "6×8",
+    "medium": "Colored pencil",
+    "description": "",
+    "image": "/images/colored-pencil/cb-92.jpg"
+  },
+  {
+    "id": "OF-98",
+    "title": "Man With Coat and Nude",
+    "style": "cross-hatching",
+    "year": 1967,
+    "size": "9.5×11.5",
+    "medium": "Crosshatching double",
+    "description": "",
+    "image": "/images/cross-hatching/of-98.jpg"
+  },
+  {
+    "id": "OF-99",
+    "title": "Black Male Nude",
+    "style": "pen-ink",
+    "year": 1968,
+    "size": "10×13",
+    "medium": "Pen and ink",
+    "description": "",
+    "image": "/images/pen-ink/of-99.jpg"
+  },
+  {
+    "id": "OF-102",
+    "title": "Willington Town Hall",
+    "style": "pen-ink",
+    "year": 1970,
+    "size": "7.5×8",
+    "medium": "Pen and ink",
+    "description": "",
+    "image": "/images/pen-ink/of-102.jpg"
+  }
+]
