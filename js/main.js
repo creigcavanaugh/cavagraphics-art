@@ -29,20 +29,52 @@ const STYLE_CONFIG = {
   "colored-pencil": {
     label: "Colored Pencil",
     description:
-      "Vibrant drawings using colored pencils to explore color blending and detail."
-  },
-  woodcut: {
-    label: "Woodcut",
-    description:
-      "Traditional relief prints with strong contrasts and textured patterns."
+      "Layered strokes of colored pencil bringing detail and color to everyday scenes."
   },
   charcoal: {
     label: "Charcoal",
     description:
-      "Expressive monochrome works emphasizing contrast and texture with charcoal."
+      "Expressive tonal drawings using soft and dramatic charcoal marks."
+  },
+  woodcut: {
+    label: "Woodcut",
+    description:
+      "Carved blocks printed in ink, creating strong contrasts and textures."
+  },
+  etching: {
+    label: "Etching",
+    description:
+      "Intaglio prints with fine lines and subtle tonal variations."
+  },
+  lithograph: {
+    label: "Lithograph",
+    description:
+      "Planographic prints using drawn imagery on stone or plate."
+  },
+  mezzotint: {
+    label: "Mezzotint",
+    description:
+      "Prints with rich, velvety blacks and delicate gradations of tone."
+  },
+  pencil: {
+    label: "Pencil",
+    description:
+      "Graphite drawings exploring form, value, and composition."
+  },
+  watercolor: {
+    label: "Watercolor",
+    description:
+      "Transparent washes of pigment capturing light and atmosphere."
+  },
+  sculpture: {
+    label: "Sculpture",
+    description:
+      "Three-dimensional work exploring form, texture, and light."
   }
   // Add more styles here as needed
 };
+
+const FEATURED_MAX = 5;
 
 // Helper: group array of items by key
 function groupBy(arr, keyFn) {
@@ -60,20 +92,30 @@ async function initGallery() {
   if (!root) return;
 
   try {
-    const res = await fetch("/data/artworks.json");
+    // IMPORTANT: relative path for Cloudflare + local dev
+    const res = await fetch("data/artworks.json");
     if (!res.ok) {
       throw new Error("Could not load artworks.json");
     }
 
     const artworks = await res.json();
 
+    // Collect featured artworks
+    const featuredArtworks = artworks.filter((a) => a.featured === true);
+
     // Group by style
     const byStyle = groupBy(artworks, (a) => a.style || "other");
-
     const styleKeys = Object.keys(byStyle).sort();
 
     const fragments = document.createDocumentFragment();
 
+    // 1) Dedicated "Featured Works" section at the top (items 3 & 5)
+    if (featuredArtworks.length > 0) {
+      const featuredSection = renderFeaturedSection(featuredArtworks);
+      fragments.appendChild(featuredSection);
+    }
+
+    // 2) Style sections, with featured at top and optional background art
     styleKeys.forEach((styleKey) => {
       const section = document.createElement("section");
       section.className = "style-section";
@@ -84,7 +126,26 @@ async function initGallery() {
         description: ""
       };
 
-      // Section container
+      // Copy + sort artworks for this style so featured come first
+      const artworksForStyle = byStyle[styleKey].slice();
+      artworksForStyle.sort((a, b) => {
+        const aFeatured = a.featured === true ? 1 : 0;
+        const bFeatured = b.featured === true ? 1 : 0;
+        if (aFeatured !== bFeatured) {
+          return bFeatured - aFeatured; // featured first
+        }
+        const aTitle = (a.title || "").toLowerCase();
+        const bTitle = (b.title || "").toLowerCase();
+        return aTitle.localeCompare(bTitle);
+      });
+
+      // Optional: find an artwork marked as background for this style
+      const bgArt = artworksForStyle.find((a) => a.background === true);
+      if (bgArt && bgArt.image) {
+        section.classList.add("style-section-has-bg");
+        section.style.setProperty("--section-bg-image", `url(${bgArt.image})`);
+      }
+
       section.innerHTML = `
         <div class="container">
           <div class="style-section-header">
@@ -98,17 +159,15 @@ async function initGallery() {
                 }
               </div>
               <span class="style-badge text-muted d-none d-md-inline">
-                ${byStyle[styleKey].length} piece${
-        byStyle[styleKey].length !== 1 ? "s" : ""
+                ${artworksForStyle.length} piece${
+        artworksForStyle.length !== 1 ? "s" : ""
       }
               </span>
             </div>
           </div>
 
           <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 artwork-grid">
-            ${byStyle[styleKey]
-              .map((art) => renderArtworkCard(art))
-              .join("")}
+            ${artworksForStyle.map((art) => renderArtworkCard(art)).join("")}
           </div>
         </div>
       `;
@@ -129,14 +188,7 @@ async function initGallery() {
 
 // Render a single artwork card as HTML string
 function renderArtworkCard(art) {
-  const {
-    title,
-    year,
-    medium,
-    size,
-    description,
-    image
-  } = art;
+  const { title, year, medium, size, description, image, featured } = art;
 
   const metaParts = [];
   if (year) metaParts.push(year);
@@ -156,11 +208,16 @@ function renderArtworkCard(art) {
           />
         </div>
         <div class="card-body d-flex flex-column">
-          <h3 class="h6 mb-1">${title || "Untitled"}</h3>
+          <div class="d-flex align-items-center justify-content-between mb-1">
+            <h3 class="h6 mb-0">${title || "Untitled"}</h3>
+            ${
+              featured
+                ? '<span class="badge bg-warning text-dark ms-2">Featured</span>'
+                : ""
+            }
+          </div>
           ${
-            metaText
-              ? `<p class="artwork-meta mb-2">${metaText}</p>`
-              : ""
+            metaText ? `<p class="artwork-meta mb-2">${metaText}</p>` : ""
           }
           ${
             description
@@ -171,6 +228,36 @@ function renderArtworkCard(art) {
       </article>
     </div>
   `;
+}
+
+// Render the dedicated "Featured Works" section (items 3 & 5)
+function renderFeaturedSection(featuredArtworks) {
+  const section = document.createElement("section");
+  section.className = "featured-section";
+
+  const topFeatured = featuredArtworks.slice(0, FEATURED_MAX);
+
+  section.innerHTML = `
+    <div class="container">
+      <div class="featured-section-header d-flex flex-wrap align-items-baseline justify-content-between gap-3 mb-3">
+        <div>
+          <h2 class="h3 mb-1">Featured Works</h2>
+          <p class="small text-muted mb-0">
+            A selection of highlighted pieces from across all styles.
+          </p>
+        </div>
+        <span class="style-badge text-muted">
+          ${featuredArtworks.length} total featured
+        </span>
+      </div>
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 g-4">
+        ${topFeatured.map((art) => renderArtworkCard(art)).join("")}
+      </div>
+    </div>
+  `;
+
+  return section;
 }
 
 // Use IntersectionObserver to toggle body style class as you scroll
@@ -217,3 +304,4 @@ document.addEventListener("DOMContentLoaded", () => {
   setFooterYear();
   initGallery();
 });
+

@@ -8,7 +8,8 @@
     "medium": "Colored pencil",
     "description": "",
     "image": "/images/colored-pencil/fr-01.jpg",
-    "featured": true
+    "featured": true,
+    "background": true
   },
   {
     "id": "FR-02",
