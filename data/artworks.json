@@ -8,8 +8,7 @@
     "medium": "Colored pencil",
     "description": "",
     "image": "/images/colored-pencil/fr-01.jpg",
-    "featured": true,
-    "background": true
+     "background": true
   },
   {
     "id": "FR-02",
@@ -20,5 +19,87 @@
     "medium": "Pen and ink",
     "description": "",
     "image": "/images/pen-ink/fr-02.jpg"
+  },
+  {
+    "id": "FR-03",
+    "title": "Village Waterfalls",
+    "style": "pen-ink",
+    "year": 1966,
+    "size": "6.5×8",
+    "medium": "Pen and ink",
+    "description": "",
+    "image": "/images/pen-ink/fr-03.jpg"
+  },
+  {
+    "id": "FR-04",
+    "title": "Mother Superior",
+    "style": "silk-screen",
+    "year": 1967,
+    "size": "22×15",
+    "medium": "Silkscreen",
+    "description": "",
+    "image": "/images/silk-screen/fr-04.jpg",
+    "featured": true
+  },
+  {
+    "id": "FR-05",
+    "title": "Fall Forest",
+    "style": "colored-pencil",
+    "year": 2008,
+    "size": "8×4.5",
+    "medium": "Colored pencil",
+    "description": "",
+    "image": "/images/colored-pencil/fr-05.jpg"
+  },
+  {
+    "id": "FR-06",
+    "title": "Window In Orange",
+    "style": "colored-pencil",
+    "year": 2005,
+    "size": "6×4",
+    "medium": "Colored pencil",
+    "description": "",
+    "image": "/images/colored-pencil/fr-06.jpg"
+  },
+  {
+    "id": "FR-07",
+    "title": "The Grist Mill",
+    "style": "pen-ink",
+    "year": 1967,
+    "size": "8×10",
+    "medium": "Pen and ink",
+    "description": "",
+    "image": "/images/pen-ink/fr-07.jpg",
+    "featured": true
+  },
+  {
+    "id": "FR-08",
+    "title": "Red Geranium",
+    "style": "pastels",
+    "year": 2006,
+    "size": "9×5.5",
+    "medium": "Pastels",
+    "description": "",
+    "image": "/images/pastels/fr-08.jpg"
+  },
+  {
+    "id": "FR-09",
+    "title": "Plant Profusion",
+    "style": "colored-pencil",
+    "year": 2006,
+    "size": "8.5×11",
+    "medium": "Colored pencil",
+    "description": "",
+    "image": "/images/colored-pencil/fr-09.jpg"
+  },
+  {
+    "id": "FR-10",
+    "title": "Floral Beauty",
+    "style": "colored-pencil",
+    "year": 2005,
+    "size": "8.5×6",
+    "medium": "Colored pencil",
+    "description": "",
+    "image": "/images/colored-pencil/fr-10.jpg"
   }
 ]
