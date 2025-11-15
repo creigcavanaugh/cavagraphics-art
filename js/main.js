@@ -109,7 +109,7 @@ async function initGallery() {
 
     const fragments = document.createDocumentFragment();
 
-    // 1) Dedicated "Featured Works" section at the top (items 3 & 5)
+    // 1) Dedicated "Featured Works" section at the top
     if (featuredArtworks.length > 0) {
       const featuredSection = renderFeaturedSection(featuredArtworks);
       fragments.appendChild(featuredSection);
@@ -160,8 +160,8 @@ async function initGallery() {
               </div>
               <span class="style-badge text-muted d-none d-md-inline">
                 ${artworksForStyle.length} piece${
-        artworksForStyle.length !== 1 ? "s" : ""
-      }
+                  artworksForStyle.length !== 1 ? "s" : ""
+                }
               </span>
             </div>
           </div>
@@ -200,12 +200,12 @@ function renderArtworkCard(art) {
   return `
     <div class="col">
       <article class="card artwork-card h-100">
-        <div class="artwork-image-wrapper">
-        <img
+        <div class="ratio ratio-4x3">
+          <img
             src="${image}"
             alt="${title ? title.replace(/"/g, "&quot;") : "Artwork"}"
             loading="lazy"
-        />
+          />
         </div>
         <div class="card-body d-flex flex-column">
           <div class="d-flex align-items-center justify-content-between mb-1">
@@ -216,9 +216,7 @@ function renderArtworkCard(art) {
                 : ""
             }
           </div>
-          ${
-            metaText ? `<p class="artwork-meta mb-2">${metaText}</p>` : ""
-          }
+          ${metaText ? `<p class="artwork-meta mb-2">${metaText}</p>` : ""}
           ${
             description
               ? `<p class="artwork-description mb-0">${description}</p>`
@@ -230,7 +228,7 @@ function renderArtworkCard(art) {
   `;
 }
 
-// Render the dedicated "Featured Works" section (items 3 & 5)
+// Render the dedicated "Featured Works" section
 function renderFeaturedSection(featuredArtworks) {
   const section = document.createElement("section");
   section.className = "featured-section";
@@ -304,4 +302,3 @@ document.addEventListener("DOMContentLoaded", () => {
   setFooterYear();
   initGallery();
 });
-
