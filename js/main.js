@@ -200,12 +200,12 @@ function renderArtworkCard(art) {
   return `
     <div class="col">
       <article class="card artwork-card h-100">
-        <div class="ratio ratio-4x3">
-          <img
+        <div class="artwork-image-wrapper">
+        <img
             src="${image}"
             alt="${title ? title.replace(/"/g, "&quot;") : "Artwork"}"
             loading="lazy"
-          />
+        />
         </div>
         <div class="card-body d-flex flex-column">
           <div class="d-flex align-items-center justify-content-between mb-1">

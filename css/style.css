@@ -191,5 +191,17 @@ footer {
   position: relative;
 }
 
+.artwork-image-wrapper {
+  width: 100%;
+  background: #f8f9fa; /* light neutral behind the art */
+}
+
+/* This is more specific than .artwork-card img and will win */
+.artwork-image-wrapper img {
+  display: block;
+  width: 100%;
+  height: auto;       /* preserve original aspect ratio */
+  object-fit: contain; /* safe, but mostly redundant with height:auto */
+}
 
 
