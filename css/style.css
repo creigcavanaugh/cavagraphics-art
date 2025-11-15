@@ -58,14 +58,12 @@ body {
   margin-top: 1rem;
 }
 
-.artwork-card {
-  border-radius: 1.25rem;
-  overflow: hidden;
-  border: none;
-  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
-  background: #ffffff;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+/* Optional: you can even delete or reduce this now */
+.artwork-card img {
+  width: 100%;
+  display: block;
 }
+
 
 .artwork-card:hover {
   transform: translateY(-3px);
