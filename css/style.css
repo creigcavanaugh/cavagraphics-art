@@ -92,7 +92,6 @@ body.has-bg-image::before {
 
 /* FIXED: Remove ratio constraint to maintain original aspect ratios */
 .artwork-image-wrapper {
-
   max-width: 100%; /* Ensures the image doesn't exceed the width of its parent container */
   max-height: 500px; /* Sets a maximum height for the image in pixels */
   width: auto; /* Allows the width to adjust proportionally based on the height or max-width */
@@ -108,8 +107,10 @@ body.has-bg-image::before {
 
 .artwork-image-wrapper img {
   display: block;
-  width: 100%;
-  height: auto;
+  max-width: 100%; /* Ensures the image doesn't exceed the width of its parent container */
+  max-height: 500px; /* Sets a maximum height for the image in pixels */
+  width: auto; /* Allows the width to adjust proportionally based on the height or max-width */
+  height: auto; /* Allows the height to adjust proportionally based on the width or max-height */
   object-fit: contain;
 }
 
