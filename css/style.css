@@ -73,7 +73,8 @@ body {
 }
 
 .artwork-card img {
-  width: 100%;
+  width: auto; /* Allows the width to adjust proportionally based on the height or max-width */
+  height: auto; /* Allows the height to adjust proportionally based on the width or max-height */
   display: block;
   object-fit: cover;
 }
