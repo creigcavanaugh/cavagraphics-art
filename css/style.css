@@ -3,11 +3,33 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   background: #f8f9fb;
   color: #212529;
-  transition: background 0.6s ease, color 0.6s ease;
+  transition: background 0.8s ease, color 0.6s ease;
+  position: relative;
+}
+
+/* Body background overlay for smooth transitions */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 0.8s ease, background-image 0.8s ease;
+  pointer-events: none;
+}
+
+body.has-bg-image::before {
+  opacity: 0.15;
+  filter: blur(8px);
 }
 
 .hero-section {
   background: radial-gradient(circle at top left, #f3f0ff, #ffffff);
+  position: relative;
+  z-index: 1;
 }
 
 /* Placeholder if you want to add a hero image later */
@@ -28,15 +50,11 @@ body {
 /* Gallery container */
 .gallery-root {
   padding-bottom: 4rem;
+  position: relative;
+  z-index: 1;
 }
 
 /* Style sections */
-.style-section {
-  padding: 4rem 0 3rem;
-  position: relative;
-  z-index: 0;
-}
-
 .style-section {
   padding: 4rem 0 3rem;
   position: relative;
@@ -72,13 +90,31 @@ body {
   box-shadow: 0 18px 40px rgba(15, 23, 42, 0.15);
 }
 
-.artwork-card img {
-  max-width: 500px;  /* Limits the maximum width to 500px */
-  max-height: 500px; /* Limits the maximum height to 500px */
-  width: auto;       /* Allows the width to adjust automatically */
-  height: auto;      /* Allows the height to adjust automatically */
-  display: block;    /* Ensures the image behaves as a block-level element */
-  object-fit: cover;
+/* FIXED: Scale images down while maintaining aspect ratios */
+.artwork-image-wrapper {
+  width: 100%;
+  background: #f8f9fa;
+  border-radius: 1.25rem 1.25rem 0 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.artwork-image-wrapper img {
+  display: block;
+  max-width: 100%;
+  max-height: 500px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+/* Smaller images for featured section to fit more cards */
+.featured-section .artwork-image-wrapper img {
+  max-height: 400px;
 }
 
 /* Card body */
@@ -108,8 +144,7 @@ body {
   background: rgba(0, 0, 0, 0.05);
 }
 
-/* Style-based background "moods"
-   You can change these colors/patterns as you like. */
+/* Style-based background "moods" */
 body.style-oil {
   background: radial-gradient(circle at top left, #f6eadc, #ffffff);
 }
@@ -136,27 +171,41 @@ body.style-pen-ink {
   background: radial-gradient(circle at top, #f4f4f4, #ffffff);
 }
 
-/* Optional: give sections a subtle overlay so cards remain legible */
-.style-section::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  opacity: 0.4;
-  /* By default, just a soft wash matching the body background */
-  background: inherit;
+body.style-colored-pencil {
+  background: linear-gradient(135deg, #fff5e6, #f0f8ff);
 }
 
-/* When a section has an artwork marked "background": true */
-.style-section-has-bg::before {
-  background-image: var(--section-bg-image);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  opacity: 0.25;           /* tweak to taste */
-  filter: blur(2px);       /* slight blur to keep cards readable */
+body.style-charcoal {
+  background: radial-gradient(circle at top, #e8e8e8, #ffffff);
 }
 
+body.style-woodcut {
+  background: linear-gradient(135deg, #f5ebe0, #ffffff);
+}
+
+body.style-etching {
+  background: radial-gradient(circle at top, #f0f0f0, #ffffff);
+}
+
+body.style-lithograph {
+  background: linear-gradient(135deg, #faf5f0, #ffffff);
+}
+
+body.style-mezzotint {
+  background: radial-gradient(circle at top, #e5e5e5, #ffffff);
+}
+
+body.style-pencil {
+  background: radial-gradient(circle at top, #f5f5f5, #ffffff);
+}
+
+body.style-watercolor {
+  background: linear-gradient(135deg, #e6f7ff, #fff0f5);
+}
+
+body.style-sculpture {
+  background: radial-gradient(circle at top, #f0f0f0, #ffffff);
+}
 
 /* Slight fade-in animation for cards */
 @keyframes fadeUp {
@@ -177,6 +226,8 @@ body.style-pen-ink {
 /* Footer */
 footer {
   background: #ffffff;
+  position: relative;
+  z-index: 1;
 }
 
 /* Featured Works section at top */
@@ -185,23 +236,10 @@ footer {
   background: #ffffffee;
   backdrop-filter: blur(6px);
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  position: relative;
+  z-index: 1;
 }
 
 .featured-section-header {
   position: relative;
-}
-
-
-.artwork-image-wrapper {
-  width: 100%;
-  background: #f8f9fa; /* light neutral behind the art */
-}
-
-/* This is more specific than .artwork-card img and will win */
-.artwork-image-wrapper img {
-  max-width: 500px;  /* Limits the maximum width to 500px */
-  max-height: 500px; /* Limits the maximum height to 500px */
-  width: auto;       /* Allows the width to adjust automatically */
-  height: auto;      /* Allows the height to adjust automatically */
-  display: block;    /* Ensures the image behaves as a block-level element */
 }
