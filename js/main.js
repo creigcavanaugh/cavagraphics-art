@@ -71,10 +71,12 @@ const STYLE_CONFIG = {
     description:
       "Three-dimensional work exploring form, texture, and light."
   }
-  // Add more styles here as needed
 };
 
 const FEATURED_MAX = 5;
+
+// Store background images by style for easy access
+const styleBackgrounds = {};
 
 // Helper: group array of items by key
 function groupBy(arr, keyFn) {
@@ -92,7 +94,6 @@ async function initGallery() {
   if (!root) return;
 
   try {
-    // IMPORTANT: relative path for Cloudflare + local dev
     const res = await fetch("data/artworks.json");
     if (!res.ok) {
       throw new Error("Could not load artworks.json");
@@ -109,7 +110,7 @@ async function initGallery() {
 
     const fragments = document.createDocumentFragment();
 
-    // 1) Dedicated "Featured Works" section at the top (items 3 & 5)
+    // 1) Dedicated "Featured Works" section at the top
     if (featuredArtworks.length > 0) {
       const featuredSection = renderFeaturedSection(featuredArtworks);
       fragments.appendChild(featuredSection);
@@ -139,11 +140,11 @@ async function initGallery() {
         return aTitle.localeCompare(bTitle);
       });
 
-      // Optional: find an artwork marked as background for this style
+      // Find artwork marked as background for this style
       const bgArt = artworksForStyle.find((a) => a.background === true);
       if (bgArt && bgArt.image) {
-        section.classList.add("style-section-has-bg");
-        section.style.setProperty("--section-bg-image", `url(${bgArt.image})`);
+        styleBackgrounds[styleKey] = bgArt.image;
+        section.dataset.bgImage = bgArt.image;
       }
 
       section.innerHTML = `
@@ -160,8 +161,8 @@ async function initGallery() {
               </div>
               <span class="style-badge text-muted d-none d-md-inline">
                 ${artworksForStyle.length} piece${
-        artworksForStyle.length !== 1 ? "s" : ""
-      }
+                  artworksForStyle.length !== 1 ? "s" : ""
+                }
               </span>
             </div>
           </div>
@@ -216,9 +217,7 @@ function renderArtworkCard(art) {
                 : ""
             }
           </div>
-          ${
-            metaText ? `<p class="artwork-meta mb-2">${metaText}</p>` : ""
-          }
+          ${metaText ? `<p class="artwork-meta mb-2">${metaText}</p>` : ""}
           ${
             description
               ? `<p class="artwork-description mb-0">${description}</p>`
@@ -230,7 +229,7 @@ function renderArtworkCard(art) {
   `;
 }
 
-// Render the dedicated "Featured Works" section (items 3 & 5)
+// Render the dedicated "Featured Works" section
 function renderFeaturedSection(featuredArtworks) {
   const section = document.createElement("section");
   section.className = "featured-section";
@@ -260,7 +259,7 @@ function renderFeaturedSection(featuredArtworks) {
   return section;
 }
 
-// Use IntersectionObserver to toggle body style class as you scroll
+// Use IntersectionObserver to toggle body style class and background as you scroll
 function setupStyleObserver() {
   const sections = document.querySelectorAll(".style-section");
   if (!sections.length || !("IntersectionObserver" in window)) return;
@@ -272,21 +271,39 @@ function setupStyleObserver() {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           const styleKey = entry.target.dataset.style;
+          const bgImage = entry.target.dataset.bgImage;
+          
           // Remove any existing style-* classes
           body.className = body.className
             .split(" ")
-            .filter((c) => !c.startsWith("style-"))
+            .filter((c) => !c.startsWith("style-") && c !== "has-bg-image")
             .join(" ")
             .trim();
 
           if (styleKey) {
             body.classList.add(`style-${styleKey}`);
           }
+
+          // Update background image if this section has one
+          if (bgImage) {
+            body.style.setProperty("--bg-image", `url(${bgImage})`);
+            body.classList.add("has-bg-image");
+            // Apply to pseudo-element
+            const styleEl = document.getElementById("dynamic-bg-style") || document.createElement("style");
+            styleEl.id = "dynamic-bg-style";
+            styleEl.textContent = `body::before { background-image: url(${bgImage}); }`;
+            if (!styleEl.parentNode) {
+              document.head.appendChild(styleEl);
+            }
+          } else {
+            body.classList.remove("has-bg-image");
+          }
         }
       });
     },
     {
-      threshold: 0.4
+      threshold: 0.3,
+      rootMargin: "-20% 0px -20% 0px"
     }
   );
 
@@ -304,4 +321,3 @@ document.addEventListener("DOMContentLoaded", () => {
   setFooterYear();
   initGallery();
 });
-
