@@ -73,9 +73,11 @@ body {
 }
 
 .artwork-card img {
-  width: auto; /* Allows the width to adjust proportionally based on the height or max-width */
-  height: auto; /* Allows the height to adjust proportionally based on the width or max-height */
-  display: block;
+  max-width: 500px;  /* Limits the maximum width to 500px */
+  max-height: 500px; /* Limits the maximum height to 500px */
+  width: auto;       /* Allows the width to adjust automatically */
+  height: auto;      /* Allows the height to adjust automatically */
+  display: block;    /* Ensures the image behaves as a block-level element */
   object-fit: cover;
 }
 
@@ -190,4 +192,16 @@ footer {
 }
 
 
+.artwork-image-wrapper {
+  width: 100%;
+  background: #f8f9fa; /* light neutral behind the art */
+}
 
+/* This is more specific than .artwork-card img and will win */
+.artwork-image-wrapper img {
+  max-width: 500px;  /* Limits the maximum width to 500px */
+  max-height: 500px; /* Limits the maximum height to 500px */
+  width: auto;       /* Allows the width to adjust automatically */
+  height: auto;      /* Allows the height to adjust automatically */
+  display: block;    /* Ensures the image behaves as a block-level element */
+}
