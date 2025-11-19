@@ -200,7 +200,7 @@ function renderArtworkCard(art) {
   return `
     <div class="col">
       <article class="card artwork-card h-100">
-        <div class="ratio ratio-4x3">
+        <div class="img-fluid">
           <img
             src="${image}"
             alt="${title ? title.replace(/"/g, "&quot;") : "Artwork"}"
