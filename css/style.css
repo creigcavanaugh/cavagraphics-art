@@ -108,13 +108,15 @@ body.has-bg-image::before {
   max-height: 500px;
   width: auto;
   height: auto;
-  object-fit: contain;
   margin: 0 auto;
 }
 
 /* Smaller images for featured section to fit more cards */
 .featured-section .artwork-image-wrapper img {
-  max-height: 400px;
+  max-width: 100%;
+  max-height: 500px;
+  width: auto;
+  height: auto;
 }
 
 /* Card body */
