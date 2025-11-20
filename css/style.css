@@ -99,24 +99,28 @@ body.has-bg-image::before {
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 250px;
+  max-height: 500px;
   padding: 1rem;
 }
 
 .artwork-image-wrapper img {
   display: block;
   max-width: 100%;
-  max-height: 500px;
-  width: auto;
-  height: auto;
+  max-height: 450px;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain;
   margin: 0 auto;
 }
 
 /* Smaller images for featured section to fit more cards */
+.featured-section .artwork-image-wrapper {
+  max-height: 400px;
+}
+
 .featured-section .artwork-image-wrapper img {
-  max-width: 100%;
-  max-height: 500px;
-  width: auto;
-  height: auto;
+  max-height: 350px;
 }
 
 /* Card body */
