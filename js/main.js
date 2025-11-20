@@ -206,6 +206,7 @@ function renderArtworkCard(art) {
             src="${image}"
             alt="${title ? title.replace(/"/g, "&quot;") : "Artwork"}"
             loading="lazy"
+            style="max-width: 100%; max-height: 450px; width: auto; height: auto; object-fit: contain;"
           />
         </div>
         <div class="card-body d-flex flex-column">

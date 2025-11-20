@@ -90,7 +90,7 @@ body.has-bg-image::before {
   box-shadow: 0 18px 40px rgba(15, 23, 42, 0.15);
 }
 
-/* FIXED: Scale images down while maintaining aspect ratios */
+/* FIXED: Scale images down while maintaining aspect ratios - NUCLEAR OPTION */
 .artwork-image-wrapper {
   width: 100%;
   background: #f8f9fa;
@@ -102,16 +102,21 @@ body.has-bg-image::before {
   min-height: 250px;
   max-height: 500px;
   padding: 1rem;
+  position: relative;
 }
 
-.artwork-image-wrapper img {
-  display: block;
-  max-width: 100%;
-  max-height: 450px;
+/* Multiple selectors with high specificity */
+.artwork-image-wrapper img,
+.artwork-card img,
+.card img,
+img {
+  display: block !important;
+  max-width: 100% !important;
+  max-height: 450px !important;
   width: auto !important;
   height: auto !important;
-  object-fit: contain;
-  margin: 0 auto;
+  object-fit: contain !important;
+  margin: 0 auto !important;
 }
 
 /* Smaller images for featured section to fit more cards */
@@ -119,8 +124,10 @@ body.has-bg-image::before {
   max-height: 400px;
 }
 
-.featured-section .artwork-image-wrapper img {
-  max-height: 350px;
+.featured-section .artwork-image-wrapper img,
+.featured-section .artwork-card img,
+.featured-section img {
+  max-height: 350px !important;
 }
 
 /* Card body */
