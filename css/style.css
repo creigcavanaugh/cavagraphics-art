@@ -7,6 +7,18 @@ body {
   position: relative;
 }
 
+/* Navbar adjustments for signature logo */
+.navbar-brand {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.navbar-brand img {
+  display: block;
+  margin: -0.25rem 0;
+}
+
+
 /* Body background overlay for smooth transitions */
 body::before {
   content: "";

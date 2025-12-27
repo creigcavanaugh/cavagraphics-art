@@ -878,5 +878,15 @@
     "medium": "Pen and ink",
     "description": "",
     "image": "/images/pen-ink/of-102.jpg"
+  },
+  {
+    "id": "OR-114",
+    "title": "Big Beak",
+    "style": "silk-screen",
+    "year": 1983,
+    "size": "",
+    "medium": "Silkscreen",
+    "description": "",
+    "image": "/images/silk-screen/or-114.png"
   }
 ]

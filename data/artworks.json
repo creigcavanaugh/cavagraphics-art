@@ -260,7 +260,8 @@
     "size": "9×12",
     "medium": "Woodcut",
     "description": "",
-    "image": "/images/woodcut/fr-27.jpg"
+    "image": "/images/woodcut/fr-27.jpg",
+    "featured": true
   },
   {
     "id": "FR-28",
@@ -320,7 +321,8 @@
     "size": "22×28",
     "medium": "Silkscreen",
     "description": "",
-    "image": "/images/silk-screen/fr-33.jpg"
+    "image": "/images/silk-screen/fr-33.jpg",
+    "featured": true
   },
   {
     "id": "FR-34",
@@ -891,5 +893,15 @@
     "medium": "Pen and ink",
     "description": "",
     "image": "/images/pen-ink/of-102.jpg"
+  },
+  {
+    "id": "OR-114",
+    "title": "Big Beak",
+    "style": "silk-screen",
+    "year": 1983,
+    "size": "",
+    "medium": "Silkscreen",
+    "description": "",
+    "image": "/images/silk-screen/or-114.png"
   }
 ]
