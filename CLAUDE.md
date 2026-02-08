@@ -147,7 +147,7 @@ The `STYLE_CONFIG` object in `js/main.js` maps style keys to display labels and 
 
 ## Known Issues
 
-- **Aggressive image CSS**: `style.css` has a bare `img` selector with `!important` rules (lines 121-132) that affects all images on the page, not just artwork images.
+- **Artwork image CSS uses `!important`**: `style.css` uses `!important` on artwork card image rules (scoped to `.artwork-image-wrapper img`, `.artwork-card img`, `.card img`).
 - **No error boundary**: If `artworks.json` fails to load, a generic error message is shown but there's no retry mechanism.
 
 ## Adding New Artwork

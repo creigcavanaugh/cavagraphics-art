@@ -16,6 +16,8 @@ body {
 .navbar-brand img {
   display: block;
   margin: -0.25rem 0;
+  height: 50px;
+  width: auto;
 }
 
 
@@ -44,19 +46,13 @@ body.has-bg-image::before {
   z-index: 1;
 }
 
-/* Placeholder if you want to add a hero image later */
-.hero-image-placeholder {
+/* Hero image */
+.hero-image {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  height: auto;
+  max-height: 500px;
+  object-fit: contain;
   border-radius: 1.5rem;
-  border: 1px dashed #ced4da;
-  background: repeating-linear-gradient(
-    45deg,
-    #f8f9fa,
-    #f8f9fa 8px,
-    #e9ecef 9px,
-    #e9ecef 16px
-  );
 }
 
 /* Gallery container */
@@ -117,11 +113,10 @@ body.has-bg-image::before {
   position: relative;
 }
 
-/* Multiple selectors with high specificity */
+/* Artwork image sizing (scoped to gallery cards only) */
 .artwork-image-wrapper img,
 .artwork-card img,
-.card img,
-img {
+.card img {
   display: block !important;
   max-width: 100% !important;
   max-height: 450px !important;
