@@ -16,6 +16,8 @@ body {
 .navbar-brand img {
   display: block;
   margin: -0.25rem 0;
+  height: 50px;
+  width: auto;
 }
 
 
@@ -117,11 +119,10 @@ body.has-bg-image::before {
   position: relative;
 }
 
-/* Multiple selectors with high specificity */
+/* Artwork image sizing (scoped to gallery cards only) */
 .artwork-image-wrapper img,
 .artwork-card img,
-.card img,
-img {
+.card img {
   display: block !important;
   max-width: 100% !important;
   max-height: 450px !important;
