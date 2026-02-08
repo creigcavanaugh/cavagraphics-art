@@ -147,8 +147,6 @@ The `STYLE_CONFIG` object in `js/main.js` maps style keys to display labels and 
 
 ## Known Issues
 
-- **CSS filename mismatch**: `index.html:17` references `/css/styles.css` (with 's') but the actual file is `css/style.css`. One of these needs to be corrected for styles to load.
-- **No `.gitignore`**: Repository has no `.gitignore` file.
 - **Aggressive image CSS**: `style.css` has a bare `img` selector with `!important` rules (lines 121-132) that affects all images on the page, not just artwork images.
 - **No error boundary**: If `artworks.json` fails to load, a generic error message is shown but there's no retry mechanism.
 
