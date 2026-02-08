@@ -260,8 +260,7 @@
     "size": "9×12",
     "medium": "Woodcut",
     "description": "",
-    "image": "/images/woodcut/fr-27.jpg",
-    "featured": true
+    "image": "/images/woodcut/fr-27.jpg"
   },
   {
     "id": "FR-28",
@@ -772,7 +771,8 @@
     "size": "24×30",
     "medium": "Oil painting",
     "description": "",
-    "image": "/images/oil/bb-83.jpg"
+    "image": "/images/oil/bb-83.jpg",
+    "featured": true
   },
   {
     "id": "BA-94",
